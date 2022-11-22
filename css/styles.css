@@ -682,8 +682,8 @@ img {
 
 .closs-bt {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 8px;
+  top: 8px;
 
   display: flex;
   justify-content: center;
