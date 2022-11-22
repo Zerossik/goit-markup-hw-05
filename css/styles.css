@@ -265,6 +265,29 @@ img {
 .work-img {
 }
 .work-item {
+  position: relative;
+}
+.work-item-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.work-item-description {
+  padding: 27px 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 /* ------------------Наша команда ------------------------*/
@@ -332,16 +355,27 @@ img {
   align-items: center;
   justify-content: center;
   fill: var(--icon-color);
+  transition: background-color 250ms var(--transition-t-f), fill 250ms var(--transition-t-f);
 }
 .social-link:hover,
 .social-link:focus {
   background-color: var(--activ-color);
   fill: #ffffff;
 }
-/* !!!!ВОПРОС МЕНТОРУ!!!! ЗАЧЕМ ЕТОТ МЕТОД? ЕСЛИ МЕТОД ВЫШЕ ТОЖЕ РАБОТАЕТ!!!
-.social-link:hover .social-icon {
+/* !!!!ВОПРОС
+  МЕНТОРУ!!!!
+  ЗАЧЕМ
+  ЕТОТ
+  МЕТОД?
+  ЕСЛИ
+  МЕТОД
+  ВЫШЕ
+  ТОЖЕ
+  РАБОТАЕТ!!! */
+/* .social-link .social-icon {
   fill: #ffffff;
 } */
+
 /* ------------------Постійні клієнти----------------------------- */
 
 .clients-title {
@@ -365,9 +399,11 @@ img {
   width: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border-color 250ms var(--transition-t-f);
 }
 .clients-logo {
   fill: var(--icon-color);
+  transition: fill 250ms var(--transition-t-f);
 }
 .client-item-link:hover,
 .client-item-link:focus {
@@ -410,6 +446,8 @@ img {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--text-white-color);
+
+  transition: color 250ms var(--transition-t-f);
 }
 
 .adress-link:hover,
@@ -423,6 +461,7 @@ img {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--transition-t-f);
 }
 .footer-container {
   display: flex;
@@ -458,6 +497,8 @@ img {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition: background-color 250ms var(--transition-t-f);
 }
 
 .icon-footer {
