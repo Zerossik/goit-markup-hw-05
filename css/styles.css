@@ -556,6 +556,8 @@ img {
 
   padding: 6px 22px;
   border-radius: 4px;
+  transition: background-color 250ms var(--transition-t-f), color 250ms var(--transition-t-f),
+    box-shadow 250ms var(--transition-t-f);
 }
 
 .portfolio-list {
