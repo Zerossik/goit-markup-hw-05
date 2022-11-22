@@ -5,6 +5,7 @@
   --text-white-color: #ffffff;
   --feature-color: #f5f4fa;
   --icon-color: #afb1b8;
+  --transition-t-f: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -105,7 +106,10 @@ img {
   color: var(--main-title-color);
   font-size: 14px;
   line-height: 1.14;
+
+  transition: color 250ms var(--transition-t-f);
 }
+
 .header-item .link:hover,
 .header-item .link:focus {
   color: var(--activ-color);
@@ -131,6 +135,8 @@ img {
   line-height: 1.14;
   color: #757575;
   text-decoration: none;
+
+  transition: color 250ms var(--transition-t-f);
 }
 
 .contact-item .link:hover,
@@ -545,3 +551,20 @@ img {
 /* Заголовок hero #FFFFFF */
 /* контакті в футере rgba(255, 255, 255, 0.6) */
 /* вторичный цвет фона #F5F4FA */
+
+/* ---------------------Ефекти та переходи------------------- */
+/* поточна сторінка */
+.header-item {
+  position: relative;
+}
+.link-active::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: var(--activ-color);
+  border-radius: 2px;
+}
